@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TaskFlow - To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>TaskFlow</h1>
+    <p class="subtitle">Simple & Smart Task Manager</p>
+
+    <!-- Add Task -->
+    <div class="input-box">
+        <input type="text" id="taskInput" placeholder="Enter a new task...">
+        <button id="addBtn">Add Task</button>
+    </div>
+
+    <!-- Task Statistics -->
+    <div class="stats">
+        <div>
+            <h3 id="totalTasks">0</h3>
+            <p>Total</p>
+        </div>
+
+        <div>
+            <h3 id="activeTasks">0</h3>
+            <p>Active</p>
+        </div>
+
+        <div>
+            <h3 id="completedTasks">0</h3>
+            <p>Completed</p>
+        </div>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="active">Active</button>
+        <button class="filter" data-filter="completed">Completed</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="taskList"></ul>
+
+    <button id="clearCompleted" class="clear-btn">
+        Clear Completed
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
